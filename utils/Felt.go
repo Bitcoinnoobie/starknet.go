@@ -30,6 +30,8 @@ func HexArrToFelt(hexArr []string) ([]*felt.Felt, error) {
 
 
 
+
+
 func FeltToBigInt(f *felt.Felt) *big.Int {
 	tmp := f.Bytes()
 	return new(big.Int).SetBytes(tmp[:])
